@@ -354,6 +354,9 @@ const DRAG_OPTIONS = {
 	dragClass: 'task-dragging',
 	delayOnTouchOnly: true,
 	delay: 1000,
+	// Distance in px from the board's edge at which the pointer starts auto-scrolling it.
+	// The sortable default (30px) is too narrow to reliably reach buckets off screen.
+	scrollSensitivity: 80,
 } as const
 
 const MIN_SCROLL_HEIGHT_PERCENT = 0.25
